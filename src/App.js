@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Item from "./Item"
+import Item from "./Item";
+import GameSection from "./GameSection"
 
 
 
@@ -133,6 +134,7 @@ class App extends Component {
         })}
 
         <Item />
+        <GameSection />
         
       </div>
     );
