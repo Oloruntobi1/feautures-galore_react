@@ -16,6 +16,8 @@ class Item extends React.Component {
 
   addItem = event => {
     event.preventDefault();
+    // console.log(event.target.value)
+    
     this.setState(oldState => ({
       items: [...oldState.items, this.state.value],
     }));

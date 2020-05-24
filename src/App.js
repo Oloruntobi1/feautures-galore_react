@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Item from "./Item";
 import GameSection from "./GameSection"
+import See from "./See"
 
 
 
@@ -100,18 +101,18 @@ const movies = {
 };
 
 
-const yee = profiles.map((profile) => {
-    const user = users[profile.userID].name
-    const movieTitle = movies[profile.favoriteMovieID].name
+// const yee = profiles.map((profile) => {
+//     const user = users[profile.userID].name
+//     const movieTitle = movies[profile.favoriteMovieID].name
 
-    return {
-      user,
-      movieTitle
-    }
+//     return {
+//       user,
+//       movieTitle
+//     }
 
-})
+// })
 
-console.log(yee)
+// console.log(yee)
 
 
 
@@ -135,6 +136,7 @@ class App extends Component {
 
         <Item />
         <GameSection />
+        <See />
         
       </div>
     );
